@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f5f1e6;
+  color: #16211d;
+}
+
+/* Visible keyboard focus everywhere — this app grades keyboard access,
+   so it has to model it. */
+:focus-visible {
+  outline: 3px solid #c98a1c;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
