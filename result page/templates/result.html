@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Accessibility Checker — Results</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>🤖 AI Accessibility Checker</h1>
+      <p>Website Analysis Report</p>
+    </header>
+
+    <section class="website-info">
+      <h2>Website</h2>
+      <p id="site-url">https://example.com</p>
+    </section>
+
+    <section class="overall-score">
+      <h2>Accessibility Score</h2>
+      <div class="score-circle" id="score-circle">—</div>
+      <div class="scan-bar" id="scan-bar"></div>
+      <div class="scan-bar-legend" id="scan-legend"></div>
+    </section>
+
+    <section class="summary">
+      <h2>AI Summary</h2>
+      <p id="ai-summary">Loading summary...</p>
+    </section>
+
+    <section class="issues">
+      <h2>Issues &amp; Recommended Fixes</h2>
+      <div id="issues-list"></div>
+    </section>
+
+    <div class="button-group">
+    <button type="button" class="download-btn" onclick="window.print()">
+        📄 Download Report
+    </button>
+
+    <button type="button"
+            class="scan-btn"
+            style="background:#2955e0;color:white;padding:12px 20px;border:none;border-radius:8px;">
+        🔄 Scan Another Website
+    </button>
+</div>
+
+  </div>
+
+  
+
+  <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+</body>
+</html>
