@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Accessibility Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="logo">
+                ♿
+            </div>
+
+            <h1>AI Accessibility Checker</h1>
+
+            <p class="subtitle">
+                Scan any website and discover accessibility issues with AI-powered suggestions.
+            </p>
+
+            <form id="scanForm">
+
+                <input
+                    type="url"
+                    id="websiteUrl"
+                    placeholder="https://example.com"
+                    required
+                >
+
+                <button type="submit">
+                    Scan Website
+                </button>
+
+            </form>
+
+            <p id="errorMessage"></p>
+
+            <div id="loading" class="hidden">
+
+                <div class="spinner"></div>
+
+                <h3>Scanning Website...</h3>
+
+                <p>Please wait while we analyze accessibility issues.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
