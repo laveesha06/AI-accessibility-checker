@@ -26,11 +26,12 @@
                 Scan any website and discover accessibility issues with AI-powered suggestions.
             </p>
 
-            <form id="scanForm">
+            <form id="scanForm" action="/scan" method="POST">
 
                 <input
                     type="url"
                     id="websiteUrl"
+                    name="website_url"
                     placeholder="https://example.com"
                     required
                 >
