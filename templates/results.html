@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Accessibility Checker — Results</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
 </head>
 <body>
 
@@ -42,11 +42,12 @@
         📄 Download Report
     </button>
 
-    <button type="button"
-            class="scan-btn"
-            style="background:#2955e0;color:white;padding:12px 20px;border:none;border-radius:8px;">
-        🔄 Scan Another Website
-    </button>
+    <button
+    type="button"
+    class="scan-btn"
+    onclick="window.location.href='/'">
+    🔄 Scan Another Website
+</button>
 </div>
 
   </div>

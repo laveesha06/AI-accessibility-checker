@@ -3,32 +3,38 @@ const urlInput = document.getElementById("websiteUrl");
 const errorMessage = document.getElementById("errorMessage");
 const loading = document.getElementById("loading");
 
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", async function (event) {
     event.preventDefault();
 
     errorMessage.textContent = "";
-
-    const url = urlInput.value.trim();
-
-    if (!isValidURL(url)) {
-        errorMessage.textContent = "Please enter a valid website URL.";
-        return;
-    }
-
     loading.classList.remove("hidden");
 
-    setTimeout(() => {
+    try {
+        const response = await fetch("/scan", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                website_url: urlInput.value
+            })
+        });
+
+        const data = await response.json();
+
         loading.classList.add("hidden");
 
-        alert("Website scanned successfully!\n\nBackend will be connected in the next step.");
-    }, 3000);
-});
+        if (!response.ok) {
+            errorMessage.textContent = data.error;
+            return;
+        }
 
-function isValidURL(url) {
-    try {
-        new URL(url);
-        return true;
-    } catch {
-        return false;
+        // Go to results page
+        window.location.href = `/results/${data.result_id}`;
+
+    } catch (err) {
+        loading.classList.add("hidden");
+        errorMessage.textContent = "Something went wrong.";
+        console.error(err);
     }
-}
+});
