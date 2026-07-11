@@ -38,6 +38,9 @@ def is_valid_url(url: str) -> bool:
 def home():
     return render_template("index.html")
 
+@app.route("/result")
+def result():
+    return render_template("result.html")
 
 @app.route("/scan", methods=["POST"])
 def scan():
