@@ -58,6 +58,7 @@ Respond ONLY with valid JSON in this exact shape and nothing else (no markdown f
   "issues": [
     {{
       "code": "the original issue code",
+      "severity": "the original issue's severity field, copied exactly (high/medium/low)",
       "plain_english": "",
       "fix": ""
     }}

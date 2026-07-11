@@ -51,7 +51,10 @@
 </div>
 
   </div>
-
+<script>
+  window.SCAN_DATA = {{ report | tojson }};
+  window.SCAN_DATA.url = {{ url | tojson }};
+</script>
   
 
 <script src="{{ url_for('static', filename='result.js') }}"></script>
