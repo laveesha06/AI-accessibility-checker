@@ -7,16 +7,19 @@
 
 body{
     background:
-        radial-gradient(circle at 15% 20%, rgba(255,255,255,0.35) 0 80px, transparent 90px),
-        radial-gradient(circle at 85% 15%, rgba(255,255,255,0.25) 0 120px, transparent 130px),
-        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.30) 0 100px, transparent 110px),
-        radial-gradient(circle at 20% 75%, rgba(255,255,255,0.20) 0 90px, transparent 100px),
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,0.12) 0 30px, transparent 31px),
+        radial-gradient(circle at 85% 15%, rgba(255,255,255,0.10) 0 25px, transparent 26px),
+        radial-gradient(circle at 70% 80%, rgba(255,255,255,0.15) 0 35px, transparent 36px),
+        radial-gradient(circle at 25% 75%, rgba(255,255,255,0.10) 0 20px, transparent 21px),
+        radial-gradient(circle at 50% 40%, rgba(255,255,255,0.08) 0 18px, transparent 19px),
         linear-gradient(135deg,#ede4ff,#d8c7f0,#b8a9e8,#9d8dd9);
 
+    background-size:cover;
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
+    position:relative;
     overflow:hidden;
 }
 
@@ -52,6 +55,11 @@ body{
     color:white;
     font-size:42px;
     box-shadow:0 8px 20px rgba(124,107,184,.3);
+}
+
+logo i{
+    font-size:42px;
+    color:white;
 }
 
 
