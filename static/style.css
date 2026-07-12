@@ -6,7 +6,7 @@
 }
 
 body{
-    background:linear-gradient(135deg,#16697a,#489fb5,#82c0cc);
+    background:linear-gradient(135deg,#d8c7f0,#b8a9e8,#9d8dd9);
     height:100vh;
     display:flex;
     justify-content:center;
@@ -34,7 +34,7 @@ body{
 .logo{
     width:90px;
     height:90px;
-    background:#16697a;
+    background:#7c6bb8;
     color:white;
     border-radius:50%;
     margin:auto;
@@ -46,7 +46,7 @@ body{
 
 h1{
     margin-top:20px;
-    color:#16697a;
+    color:#5b4b8a;
     font-size:34px;
 }
 
@@ -59,7 +59,7 @@ h1{
 input{
     width:100%;
     padding:15px;
-    border:2px solid #82c0cc;
+    border:2px solid #c3aed6;
     border-radius:10px;
     font-size:16px;
     outline:none;
@@ -67,14 +67,14 @@ input{
 }
 
 input:focus{
-    border-color:#16697a;
+    border-color:#7c6bb8;
 }
 
 button{
     width:100%;
     margin-top:20px;
     padding:15px;
-    background:#ffa62b;
+    background:#a0729b;
     color:white;
     border:none;
     border-radius:10px;
@@ -84,7 +84,7 @@ button{
 }
 
 button:hover{
-    background:#e89014;
+    background:#8a5f85;
     transform:scale(1.03);
 }
 
@@ -105,8 +105,8 @@ button:hover{
 .spinner{
     width:60px;
     height:60px;
-    border:6px solid #ddd;
-    border-top:6px solid #16697a;
+    border:6px solid #dddd;
+    border-top:6px solid #7c6bb8;
     border-radius:50%;
     animation:spin 1s linear infinite;
     margin:20px auto;
