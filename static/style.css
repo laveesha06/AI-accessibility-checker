@@ -7,11 +7,11 @@
 
 body{
     background:
-        radial-gradient(circle at 15% 20%, rgba(255,255,255,0.12) 0 30px, transparent 31px),
-        radial-gradient(circle at 85% 15%, rgba(255,255,255,0.10) 0 25px, transparent 26px),
-        radial-gradient(circle at 70% 80%, rgba(255,255,255,0.15) 0 35px, transparent 36px),
-        radial-gradient(circle at 25% 75%, rgba(255,255,255,0.10) 0 20px, transparent 21px),
-        radial-gradient(circle at 50% 40%, rgba(255,255,255,0.08) 0 18px, transparent 19px),
+        radial-gradient(circle at 10% 20%, rgba(255,255,255,0.30) 0 35px, transparent 36px),
+        radial-gradient(circle at 88% 15%, rgba(255,255,255,0.28) 0 25px, transparent 26px),
+        radial-gradient(circle at 78% 78%, rgba(255,255,255,0.30) 0 40px, transparent 41px),
+        radial-gradient(circle at 25% 75%, rgba(255,255,255,0.25) 0 30px, transparent 31px),
+        radial-gradient(circle at 50% 40%, rgba(255,255,255,0.22) 0 22px, transparent 23px),
         linear-gradient(135deg,#ede4ff,#d8c7f0,#b8a9e8,#9d8dd9);
 
     background-size:cover;
@@ -44,22 +44,17 @@ body{
 }
 
 .logo{
-    width:95px;
-    height:95px;
+    width:90px;
+    height:90px;
+    background:#7c6bb8;
+    color:white;
+    border-radius:50%;
     margin:0 auto 20px;
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius:50%;
-    background:linear-gradient(135deg,#9D8DD9,#7C6BB8);
-    color:white;
     font-size:42px;
-    box-shadow:0 8px 20px rgba(124,107,184,.3);
-}
-
-logo i{
-    font-size:42px;
-    color:white;
+    box-shadow:0 8px 20px rgba(124,107,184,0.25);
 }
 
 
