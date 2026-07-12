@@ -22,13 +22,15 @@ body{
 }
 
 .card{
-    background:#fff;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.4);
     width:100%;
     max-width:600px;
     padding:40px;
     border-radius:20px;
     text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    box-shadow:0 15px 35px rgba(92,75,138,0.18);
 }
 
 .logo{
@@ -74,7 +76,7 @@ button{
     width:100%;
     margin-top:20px;
     padding:15px;
-    background:#a0729b;
+    background:#8b6fd6;
     color:white;
     border:none;
     border-radius:10px;
