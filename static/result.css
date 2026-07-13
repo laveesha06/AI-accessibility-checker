@@ -35,6 +35,17 @@ header {
   text-align: center;
   margin-bottom: 28px;
 }
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
 header h1 {
   font-size: 26px;
   margin-bottom: 4px;
@@ -180,6 +191,13 @@ section h2 {
   background: var(--accent);
   color: #fff;
   border-color: var(--accent);
+}
+.download-btn img,
+.scan-btn img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-right: 8px;
 }
 .button-group button:hover { opacity: 0.9; }
 .button-group button:focus-visible {
