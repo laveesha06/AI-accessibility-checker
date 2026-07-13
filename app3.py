@@ -10,6 +10,8 @@ Flow:
 4. Result is cached temporarily in memory and returned as JSON,
    with a redirect-friendly result_id for a /results/<id> page
 """
+from dotenv import load_dotenv
+load_dotenv()
 
 import uuid
 from flask import Flask, render_template, request, jsonify, redirect, url_for
