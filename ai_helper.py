@@ -88,6 +88,7 @@ def get_ai_report(url, issues):
         return report
 
     except Exception as e:
+        print("Gemini Error:", e)
 
         fallback = []
 
